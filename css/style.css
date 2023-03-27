@@ -29,9 +29,9 @@ button {
     background-color: hsl(49deg 98% 60%);
     border-radius: 50px;
     position: relative;
-    margin-left: 45%;
+    margin-left: 48%;
     cursor: pointer;
-    top: 30%;
+    top: 40%;
     overflow: hidden;
     transition: all .5s ease;
   }
