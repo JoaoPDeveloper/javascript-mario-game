@@ -132,3 +132,12 @@ button {
     }
 
 }
+@media only screen and (max-width: 425px){
+    .supermario{
+        width: 65%;
+        margin-left: 80px;
+    }
+    button{
+        margin-left: 130px;
+    }
+}
