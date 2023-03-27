@@ -22,6 +22,7 @@ const loopGame = setInterval(() => {
     mario.style.animation = "none";
     mario.style.bottom = `${marioPosition}px`;
 
+    mario.style.bottom 
     mario.src = "/images/mario-game-over.png";
     mario.style.width = "75px";
     mario.style.marginLeft = "45px";
@@ -31,3 +32,14 @@ const loopGame = setInterval(() => {
 }, 10);
 
 document.addEventListener("keydown", jump);
+
+var btn = document.createElement("recarregarAPagina")
+
+btn.innerHTML = "Restart Game";
+btn.addEventListener("click", function () {
+  
+  })
+
+
+  var recarregarAPagina = document.getElementById('recarregarAPagina');
+  recarregarAPagina.appendChild(btn);  

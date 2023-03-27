@@ -13,27 +13,82 @@
     overflow: hidden;
     background: linear-gradient(#87CEEB, #E0F6FF);
 }
-
-.pipe-game {
+button {
+    align-items: center;
+    display: none;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 16px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    margin-left: 45%;
+    cursor: pointer;
+    top: 30%;
+    overflow: hidden;
+    transition: all .5s ease;
+  }
+  button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+  }
+  button svg {
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  .play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+  }
+  button:hover svg {
+    transform: scale(3) translate(50%);
+  }
+  .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+  button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+  }
+.pipe-game{
     position: absolute;
     bottom: 0;
     width: 80px;
     animation: pipe-animation 1.5s infinite linear;
-    background-image: ;
 }
-
+.supermario{
+    width: 20%;
+    position:absolute;
+    margin-left: 42%;
+    z-index: 0;
+}
 .super-mario{
     width:150px;
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
 }
-
 .jump-mario {
     animation: mario-animation 500ms ease-out;
 }
 
 .cloud-game{
     position: absolute;
+    z-index: 1;
     width: 550px;
     animation: clouds-animation 20s infinite linear;
 }

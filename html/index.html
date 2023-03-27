@@ -10,9 +10,29 @@
 <body>
     <div class="game">
         <img src="/images/clouds-gamer.png" class="cloud-game"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Mario_Series_Logo.svg" alt="" class="supermario">
         <img src="/images/super-mario.gif" class="super-mario"/>
+
+        <button class="play" onclick="recarregarAPagina()">
+            <svg height="36px" width="36px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="#fdd835" y="0" x="0" height="36" width="36"></rect>
+            </svg>
+            <span class="now">now!</span>
+            <span class="play">Restart</span>
+        </button>
         <img src="/images/pipe-game.png" class="pipe-game"/>
     </div>
     <script src="/js/script.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function(){
+
+setTimeout(function(){
+   document.querySelector("button.play").style.display = "inline-block";
+}, 4000);
+});
+        function recarregarAPagina(){
+          window.location.reload();
+        }     
+        </script>
 </body>
 </html>
