@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/super-mario-o.gif" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <title>Super Mario</title>
 </head>
@@ -13,6 +14,9 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Mario_Series_Logo.svg" alt="" class="supermario">
         <img src="/images/super-mario.gif" class="super-mario"/>
 
+        <audio autoplay loop id="music">
+            <source src="/images/01 Running About.mp3" type="audio/mpeg">
+          </audio>
         <button class="play" onclick="recarregarAPagina()">
             <svg height="36px" width="36px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
                 <rect fill="#fdd835" y="0" x="0" height="36" width="36"></rect>
@@ -30,9 +34,13 @@ setTimeout(function(){
    document.querySelector("button.play").style.display = "inline-block";
 }, 4000);
 });
-        function recarregarAPagina(){
+     function recarregarAPagina(){
           window.location.reload();
         }     
+
+    const audio = this.document.getElementById('music');
+    audio.play();
+    audio.volume = 0.5
         </script>
 </body>
 </html>
