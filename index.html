@@ -29,18 +29,17 @@
     <script src="/js/script.js"></script>
     <script>
   document.addEventListener("DOMContentLoaded", function(){
-
 setTimeout(function(){
    document.querySelector("button.play").style.display = "inline-block";
-}, 4000);
+}, 3000);
 });
      function recarregarAPagina(){
           window.location.reload();
         }     
-
     const audio = this.document.getElementById('music');
+    audio.currentTime = 1
     audio.play();
-    audio.volume = 0.5
+    audio.volume = 0.3
         </script>
 </body>
 </html>
