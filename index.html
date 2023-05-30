@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/images/super-mario-o.gif" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <title>Super Mario</title>
 </head>
 <body>
     <div class="game">
-        <img src="/images/clouds-gamer.png" class="cloud-game"/>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Mario_Series_Logo.svg" alt="" class="supermario">
-        <img src="/images/super-mario.gif" class="super-mario"/>
+
+        <p class="pontuacao">a sua pontuação é :  <span id="pontuacao">0</span></p>
+
+
+        <div id="mensagemParabens">Parabéns! Você já fez uma pontuação incrivel, continue assim! 🎉🎉</div>
+        <div id="novaMensagemParabens">Incrivel, você está indo bem demais, eu acredito no seu potêncial! 🚀🥳</div>
+        <div id="mensagemTotalParabens">Você é simplesmente Incrivel!😍😎</div>
+        <img src="/images/clouds-gamer.png" class="cloud-game" id="cloud_game"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Mario_Series_Logo.svg" alt="" class="mario_super_logo" id="mario_logo">
+        <img src="/images/super-mario.gif" class="super-mario" id="gif_mario"/>
 
         <audio autoplay loop id="music">
             <source src="/images/01 Running About.mp3" type="audio/mpeg">
@@ -24,7 +34,7 @@
             <span class="now">now!</span>
             <span class="play">Restart</span>
         </button>
-        <img src="/images/pipe-game.png" class="pipe-game"/>
+        <img src="/images/pipe-game.png" class="pipe-game" id="pipe_game"/>
     </div>
     <script src="/js/script.js"></script>
     <script>

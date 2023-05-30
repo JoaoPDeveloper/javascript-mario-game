@@ -71,9 +71,10 @@ button {
     width: 80px;
     animation: pipe-animation 1.5s infinite linear;
 }
-.supermario{
+.mario_super_logo{
     width: 20%;
     position:absolute;
+    cursor: none;
     margin-left: 42%;
     z-index: 0;
 }
@@ -84,6 +85,35 @@ button {
 }
 .jump-mario {
     animation: mario-animation 500ms ease-out;
+}
+#mensagemParabens,
+#novaMensagemParabens,
+#mensagemTotalParabens {
+    display: none; 
+    width: 300px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    color: bisque;
+    border-radius: 12px;
+    background-color: rgb(6, 76, 126);
+    font-weight: 800;
+    top: 70%;
+    left: 47%;
+    margin: -25px 0 0 -25px; 
+  }
+.pontuacao{
+    width: 300px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    color: bisque;
+    border-radius: 12px;
+    background-color: rgb(6, 76, 126);
+    font-weight: 800;
+    top: 60%;
+    left: 47%;
+    margin: -25px 0 0 -25px; 
 }
 
 .cloud-game{
@@ -133,7 +163,7 @@ button {
 
 }
 @media only screen and (max-width: 425px){
-    .supermario{
+    .mario_super_logo{
         width: 65%;
         margin-left: 80px;
     }
